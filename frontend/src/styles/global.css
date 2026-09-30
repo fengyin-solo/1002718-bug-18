@@ -33,3 +33,24 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.success-text { color: #067647; }
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, .45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { background: #fff; border-radius: 10px; width: 560px; max-width: calc(100vw - 32px); max-height: calc(100vh - 48px); overflow: auto; box-shadow: 0 12px 32px rgba(16, 24, 40, .2); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.modal-head h3 { margin: 0; font-size: 15px; }
+.modal-body { padding: 16px 18px; }
+.modal-foot { display: flex; justify-content: flex-end; gap: 8px; padding: 12px 18px; border-top: 1px solid var(--border); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+.form-grid .full { grid-column: 1 / -1; }
+.form-field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-field input, .form-field textarea, .form-field select { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 7px 9px; font-size: 13px; font-family: inherit; }
+.form-field textarea { resize: vertical; min-height: 60px; }
+.form-tip { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
+.badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; border: 1px solid var(--border); }
+.badge.lashed { background: #ecfdf3; color: #067647; border-color: #abefc6; }
+.badge.doing { background: #fffaeb; color: #b54708; border-color: #fedf89; }
+.badge.removed { background: #f2f4f7; color: #475467; border-color: #d0d5dd; }
+.detail-list { margin: 0; padding-left: 18px; font-size: 13px; }
+.detail-list li { margin: 4px 0; }
+.row-flash { animation: row-flash 1.6s ease-out; }
+@keyframes row-flash { 0% { background: #e0f2fe; } 100% { background: transparent; } }

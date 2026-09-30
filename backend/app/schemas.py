@@ -19,6 +19,11 @@ class ActionResult(BaseModel):
     ok: bool
     message: str
     entry: dict[str, Any] | None = None
+    token: str | None = None
+    resumed: bool | None = None
+    conflict: bool | None = None
+    phase: str | None = None
+    draft: dict[str, Any] | None = None
 
 
 class EntryPayload(BaseModel):
